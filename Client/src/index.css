@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #cbe4de;
+  --secondary-color: #0e8388;
+  --tertiary-color: #2c3333;
+  --background-color: #fff;
+  --font-color: white;
+}
+.header {
+  background-color: var(--secondary-color);
+}
+.footer {
+  background-color: var(--secondary-color);
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.App {
+  color: black;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.resAdd {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addButton {
+  width: 100%;
+  max-width: 300px;
+  height: 70px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+form {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  width: 50%;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 2%;
+  padding: 20px;
+}
+
+form input {
+  height: 40px;
+  margin: 12px 0;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  height: 70px;
+  width: 200px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black;
+
+  margin: 15px auto;
+  display: block;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 2rem;
+  width: 300px;
+  height: 330px;
+  padding-left: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 20%;
+}
+.card h3 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  background-color: var(--tertiary-color);
+  border: 1px solid black;
+  color: #fefae0;
+}
